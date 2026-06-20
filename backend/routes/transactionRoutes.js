@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Transaction = require('../models/Transaction');
 
-// POST /api/transactions - Save final transaction
 router.post('/', async (req, res) => {
   try {
     const { cartItems, subTotal, tax, discount, totalPayment } = req.body;

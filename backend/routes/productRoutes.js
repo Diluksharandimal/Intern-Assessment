@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// POST /api/products - Add a new product (Admin Form)
+
 router.post('/', async (req, res) => {
   try {
     const { id, name, description, category, price, stock, imageUrl } = req.body;
